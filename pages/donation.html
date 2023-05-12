@@ -1,7 +1,8 @@
-<html lang="en">
+
   <head>
     <link
       rel="stylesheet"
+      19cb57a47f0c7e3f6fae6c01cef04ddfb3f5c171
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
@@ -12,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
-    <title>login</title>
+    <title>donation</title>
   </head>
   <body>
     <header>
@@ -25,10 +26,10 @@
             <div class="nav__right">
               <ul>
                 <li><a href="/">Home</a></li>
-<li><a href="Rafat/login.html">Log in</a></li>
-                <li><a href="Rafat/signup.html">Sign Up</a></li>
-                <li><a href="Rafat/donation.html">Donate</a></li>
-                <li><a href="Rafat/contact us.html">Contact Us</a></li>
+<li><a href="pages/login.html">Log in</a></li>
+                <li><a href="pages/signup.html">Sign Up</a></li>
+                <li><a href="pages/donation.html">Donate</a></li>
+                <li><a href="pages/contact us.html">Contact Us</a></li>
                 <li><i class="fa-solid fa-bars"></i></li>
               </ul>
             </div>
@@ -36,38 +37,58 @@
         </div>
       </nav>
     </header>
-    <section class="login__section">
-      <div class="login">
-        <h1>Login to Rafat</h1>
-        <p class="login__paragraph">
-          Enter the information you entered while signing up!
+    <section class="donation__section">
+      <div class="donation">
+        <h1>Donate,Change a life!</h1>
+        <p class="donation__paragraph">
+          We appreciate whatever you contribute.
         </p>
         <form>
-          <div class="login__email">
+          <div class="donation__name">
+            <p>Name</p>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="donation__email">
             <p>Email</p>
             <input
               type="email"
-              placeholder="Enter you email"
               name="Email"
+              placeholder="Enter your email"
               id="#"
-              class="login__email__input"
+              required
             />
           </div>
-          <div class="login__password">
-            <p>Password</p>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              name="password"
-              id="#"
-            />
+          <div class="donation__options">
+            <div class="donation__programmes">
+              <label>Specify programme</label>
+              <select>
+                <option>School fees</option>
+                <option>Football</option>
+                <option>Sponsorship</option>
+              </select>
+            </div>
+            <div>
+              <label>Contributing via</label>
+              <select>
+                <option>M-pesa</option>
+                <option>Bank Cheque</option>
+                <option>Parcel delivery</option>
+              </select>
+            </div>
           </div>
-          <div class="login__btn">
-            <button><a href="">Log in</a></button>
+          <div class="donation__comment">
+            <p>Comment</p>
+            <textarea
+              name="Comment"
+              placeholder="Place your Comment"
+              id=""
+              cols="50"
+              rows="10"
+            ></textarea>
           </div>
-          <p class="to__login">
-            Don't have an account? <a href="signup.html">SignUp</a>
-          </p>
+          <div class="donation__button">
+            <button><a href="">Donate</a></button>
+          </div>
         </form>
       </div>
     </section>
